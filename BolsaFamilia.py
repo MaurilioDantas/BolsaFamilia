@@ -7,7 +7,7 @@ from dateutil.relativedelta import relativedelta
 
 now = datetime.now()
 inicio = now.strftime("%d/%m/%Y %H:%M:%S")
-AnoMesString= '1'
+AnoMesString= ''
 
 AnoMes = datetime(2020,3,1)
 AnoMesAtual = datetime(2020,4,1)
@@ -16,7 +16,7 @@ AnoMesAtual = datetime(2020,4,1)
 while AnoMes < AnoMesAtual:
 
     cont = 0
-    with open('C:\Projetos\Tortoise\CodigoMunicipio.csv') as csv_file:
+    with open('C:\Projeto\BolsaFamilia\CodigoMunicipio.csv') as csv_file:
         csv_reader = csv.reader(csv_file)
         line_count = 0
         AnoMesString = AnoMes.strftime('%Y%m')
@@ -64,48 +64,6 @@ while AnoMes < AnoMesAtual:
     print('Final em:' + now)
     AnoMes = AnoMes + relativedelta(months=1)
                         
-    
-
-#Outubro 2003
-# datetime object containing current date and time
-#now = datetime.now()
-#print("now =", now)
-# dd/mm/YY H:M:S
-#dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
-#print("date and time =", dt_string)
-#agora = now - datetime.now()
-#print(agora)
-#cont = 0
-
-
-#with open('dados_escrita2.csv', mode='w', encoding='utf-8', newline='') as csv_file:
-#    fieldnames = ['nome', 'depto', 'mes_aniv']
-#    writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
-
-    
-    
-    
-
-
-
-
-
-            #agora = datetime.now() - now
-            #print(agora)
-            #cont = cont + 1
-            #print(cont)
-            #print(cont/agora)
-                
-            #with open('C:\Projetos\Tortoise\BolsaFamilia\Estudo.txt') as json_file:
-             # --  data = json.load(json_file)
-                
-            #print(data['uf']['nome'])
-
-#C:\Projetos\Tortoise\BolsaFamilia
-#with open('C:\\Projetos\\Tortoise\\BolsaFamilia\\'+ codigoIbge + '.json', 'w') as f:
-
-
-
 
 
 
